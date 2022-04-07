@@ -3,7 +3,7 @@
 * World
 
 ## **World, Hey**
-[Link](http://https://www.helloworld.org/)	
+[Link](https://www.helloworld.org/)	
 
 > Hi
 > World
