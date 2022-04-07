@@ -6,14 +6,14 @@
 [Link](https://www.helloworld.org/)	
 
 > Hi
-> World
+> Earth
 
 ![Image](https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png)	
 
 1. Greetings
 2. Globe
 
-Horizon, Howdy
+Planet, Bonjour
 
 ---
 
