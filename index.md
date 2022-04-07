@@ -20,7 +20,6 @@ Horizon, Howdy
 `Yo wassup Earth my mannnn`
 
 ```
-# code block
-print '3 backticks or'
-print 'indent 4 spaces'
+```
+absolutely massive and wrinkly and did i mention massive brain
 ```
