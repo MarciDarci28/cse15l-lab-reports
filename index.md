@@ -8,7 +8,7 @@
 > Hi
 > World
 
-![Image](docs.microsoft.com/en-us/shows/hello-world/media/helloworld_383x215.png)	
+![Image](https://miro.medium.com/max/1024/1*OohqW5DGh9CQS4hLY5FXzA.png)	
 
 1. Greetings
 2. Globe
