@@ -87,11 +87,32 @@ I have good news! There's a great solution:
 SSH keys creates a pair of files called the *public key* and *private key*, that are connected to the particular locations of your local computer and the remote server. They can be used in place of constantly entering a password.
 
 To set this up run the following on your local computer:
+
 `$ ssh-keygen`
+
 `Enter file in which to save the key
 (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa`
+
 `Enter passphrase (empty for no passphrase):`
+
 (Note: Do NOT add a passphrase for this step, just press Enter)
 
 Once done, the result should look something like:
+
 ![Image](https://user-images.githubusercontent.com/86495731/162657793-76d7c65a-0616-4670-920c-e52d429cf725.png)
+
+After that, we need to copy the public key to the `.ssh` directory of your specific user account onto the server.
+
+To set this up run the following on your remote server after logging in:
+
+`$ mkdir .ssh`
+
+Next, go back onto your local computer and run:
+
+`$ scp /Users/<user-name>/.ssh/id_rsa.pub
+cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+Once done, you should be able to `scp` or `ssh` from the local to the remote computer without the need for entering your password.
+
+
+
