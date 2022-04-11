@@ -114,5 +114,24 @@ cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 
 Once done, you should be able to `scp` or `ssh` from the local to the remote computer without the need for entering your password.
 
+As with all things computer science, even though the current process works, it doesn't work the best. There's always room for optimization!
 
+## Making Remote Running Even More Pleasant
+Here are some ways you can improve the runtime of making a local edit, copying it to the remote server, and running it:
 
+* You can directly run a command onto the remote server by adding a command in quotes at the end of an `ssh` command. For instance:
+
+> `$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"` ---
+> This comment will log in and print the home directly on the remote server, all in one line!
+
+* You can run multiple commands on the same line by using semicolons:
+
+> `$ cp WhereAmI.java OtherMain.java; javac OtherMain.java;
+java WhereAmI`
+
+* You can use the up-arrow on your keyboard to recall the last command that you ran
+
+Here's a little demonstration of said optimization:
+![Image](https://user-images.githubusercontent.com/86495731/162663599-5d2fb5c2-6dd1-4905-ae6e-d421381dbed6.png)
+
+And that's it! Thank you for reading this tutorial. May it be a useful aid for setting up remote programming. Goodbye.
