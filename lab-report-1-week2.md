@@ -86,4 +86,12 @@ I have good news! There's a great solution:
 ## SSH Keys
 SSH keys creates a pair of files called the *public key* and *private key*, that are connected to the particular locations of your local computer and the remote server. They can be used in place of constantly entering a password.
 
+To set this up run the following on your local computer:
+`$ ssh-keygen`
+`Enter file in which to save the key
+(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa`
+`Enter passphrase (empty for no passphrase):`
+(Note: Do NOT add a passphrase for this step, just press Enter)
 
+Once done, the result should look something like:
+![Image](https://user-images.githubusercontent.com/86495731/162657793-76d7c65a-0616-4670-920c-e52d429cf725.png)
