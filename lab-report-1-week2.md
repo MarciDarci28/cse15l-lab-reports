@@ -45,14 +45,14 @@ For some extra fun, let's——
 Commands are cool. There's a lot of those. Like, a LOT. Too many, one might say.
 
 Here's some essential commands to know:
-* cd ~
-* ls -lat
-* ls -a
-* ls </home/linux/ieng6/cs15lsp22/cs15lsp22zz> 
+* `cd ~`
+* `ls -lat`
+* `ls -a`
+* `ls </home/linux/ieng6/cs15lsp22/cs15lsp22zz>`
 
 Try running them both on your local computer and on the remote server. Experiment!
 
-For instance, when I used pwd in the terminal while logged into the remote computer, which is a command that prints the full pathname of the current working directory being used, starting from the root directory (which is in this case /home).
+For instance, I used `pwd` in the terminal while logged into the remote computer. `pwd` is a command that prints the full pathname of the current working directory being used, starting from the root directory (which is in this case /home):
 
 ![Image](https://user-images.githubusercontent.com/86495731/162652133-73545f7c-8a0c-435c-9ae8-5f4e0f65a45f.png)
 
