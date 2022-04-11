@@ -20,12 +20,12 @@ So now we're getting to the part where your local computer will remotely connect
 
 You know what time it is? Checking your course-specific account name time! 
 
-Make sure to head on down to the UCSD Account Lookup page [(Look, a link!)](https://sdacs.ucsd.edu/~icc/index.php) to find out what the heck your CSE15L account is called. It should be the characters after "cs15lsp22" (note: this tutorial was made in Spring 2022, so the last 4 characters will vary depending on the quarter).
+Make sure to head on down to the UCSD Account Lookup page [(Look, a link!)](https://sdacs.ucsd.edu/~icc/index.php) to find out what the heck your CSE15L account is called. It should be the characters after "cs15lsp22" (note: this tutorial was made in Spring 2022, so the last 4 characters will vary depending on the quarter and year).
 
 Here's an example:
 ![Image](https://user-images.githubusercontent.com/86495731/162650598-3359fa9d-0713-45c1-a08b-8a66d59a7ca5.png)
 
-Once you've got your account name, open a terminal in VScode and connect to the server using the following command prompt:
+Once you've got your wonderful account name, open a terminal in VScode and connect to the server using the following command prompt:
 
 ```
 $ ssh cs15lsp22zz@ieng6.ucsd.edu
@@ -37,7 +37,7 @@ Here's an example of the message you should get after connecting:
 
 Process complete! Now your computer terminal on VScode is connected to a computer in the CSE basement! Woohoo! :D
 
-You can now remotely run commands onto the computer server from your local computer, use this power as you wish.
+You can now remotely run commands onto the computer server from your local computer. Use this power as you wish.
 
 For some extra fun, let's——
 
@@ -56,6 +56,34 @@ For instance, I used `pwd` in the terminal while logged into the remote computer
 
 ![Image](https://user-images.githubusercontent.com/86495731/162652133-73545f7c-8a0c-435c-9ae8-5f4e0f65a45f.png)
 
+> IMPORTANT NOTE -- To log out of the remote server in your VScode terminal, user either:
+> * `Ctrl-D`
+> * `exit`
 
+Okie dokie, let's keep this train moving!
+
+## Moving Files with `scp`
+A pivotal aspect to working remotely is copying files back and forth between the local and remote computer. 
+
+"But tutorial, how do I do that on my ieng6 account?" Don't worry dear 15L student, there's a command for that!
+
+`scp` copies a file from your local computer to a remote computer. Note: Always run this command from your local computer, not on ieng6!)
+
+The way it works is:
+
+`scp <file name>.java cs15lsp22zz@ieng6.ucsd.edu:~/`
+
+When you log into the remote computer ieng6 with ssh again, use the command `ls`. You should then see the file you copied in your home directory! 
+
+To demonstrate, when I copied the file WhereAmI.java onto my ieng6 account and ran `ls` on the remote server, I got:
+
+![Image](https://user-images.githubusercontent.com/86495731/162653935-68230e49-4b28-4c4f-9fad-6ce7be49cc0d.png)
+
+After some experimenting I'm sure you notice the tediousness of entering your password over and over every time you log in or run `scp`. It do be frustrating though, and time-consuming. 
+
+I have good news! There's a great solution:
+
+## SSH Keys
+SSH keys creates a pair of files called the *public key* and *private key*, that are connected to the particular locations of your local computer and the remote server. They can be used in place of constantly entering a password.
 
 
