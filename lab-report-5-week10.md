@@ -95,4 +95,3 @@ This is because there is text inbetween the link text and the link itself. Since
 
 The bug in the code is the fact that the week 9 markdown-parser does not check what is in between the link title and the link itself, which it should be doing. The program should not output a link if there is text in between the link title and the link.
 The solution would be to add another condition that checks the difference between closeBracket and openParen.
-
